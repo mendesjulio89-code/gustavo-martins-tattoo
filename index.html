@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Martins Tattoo — Arte que Marca. Estilo que Permanece.</title>
+    <meta name="description" content="Estúdio de Tatuagem Gustavo Martins - Blackwork, Pescoço, Exotérica, Fine Line e Fechamentos exclusivos. Agende sua sessão.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#070707',
+                            900: '#0c0c0c',
+                            850: '#111111',
+                            800: '#161616',
+                            700: '#222222',
+                            600: '#333333',
+                        },
+                        gold: {
+                            light: '#f5e2a3',
+                            DEFAULT: '#c9a44c',
+                            hover: '#e2be62',
+                            dark: '#9a772c',
+                            muted: 'rgba(201, 164, 76, 0.25)',
+                        },
+                        parchment: {
+                            light: '#f4ede1',
+                            DEFAULT: '#e6decb',
+                            dark: '#c5baa1'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        cinzelDeco: ['"Cinzel Decorative"', 'serif'],
+                        gothic: ['"UnifrakturCook"', 'cursive', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Styles & Dark Aesthetic */
+        body {
+            background-color: #080808;
+            color: #d1d5db;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #f6e6b4 0%, #c9a44c 50%, #9a772c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(201, 164, 76, 0.35);
+            transition: all 0.3s ease;
+        }
+        .gold-border-glow:hover {
+            border-color: rgba(201, 164, 76, 0.8);
+            box-shadow: 0 0 18px rgba(201, 164, 76, 0.2);
+        }
+
+        /* Vintage divider */
+        .ornament-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 12px auto 24px auto;
+        }
+        .ornament-divider::before, .ornament-divider::after {
+            content: '';
+            height: 1px;
+            width: 40px;
+            background: linear-gradient(90deg, transparent, #c9a44c, transparent);
+        }
+
+        /* Flash art card look */
+        .flash-paper {
+            background: radial-gradient(circle at center, #f0ebd9 0%, #dfd6be 70%, #c5b99e 100%);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.18), 0 10px 25px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .flash-paper::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            border: 1px dashed rgba(80, 65, 40, 0.35);
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080808;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a251b;
+            border-radius: 4px;
+            border: 1px solid #c9a44c;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c9a44c;
+        }
+
+        /* Glow animation */
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(201, 164, 76, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(201, 164, 76, 0.8); }
+        }
+        .animate-pulse-glow {
+            animation: pulseGlow 2.5s infinite;
+        }
+    </style>
+</head>
+<body class="selection:bg-gold selection:text-black">
+
+    <!-- Top Notification / Announcement Bar -->
+    <div class="bg-dark-950 border-b border-gold/15 py-1.5 text-center text-xs tracking-widest text-gold/90 font-cinzel">
+        ✦ AGENDA ABERTA PARA ESTE MÊS — ATENDIMENTO EXCLUSIVO COM HORA MARCADA ✦
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-40 bg-dark-950/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#inicio" class="flex flex-col items-center group">
+                <span class="font-cinzel font-bold text-lg sm:text-xl tracking-[0.25em] text-white group-hover:text-gold transition">
+                    GUSTAVO MARTINS
+                </span>
+                <span class="text-[10px] tracking-[0.45em] text-gold flex items-center gap-1.5 mt-0.5">
+                    <span class="text-[8px]">✦</span> TATTOO <span class="text-[8px]">✦</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#inicio" class="text-xs font-cinzel tracking-widest font-semibold text-gold border-b-2 border-gold pb-1">INÍCIO</a>
+                <a href="#categorias" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">ESTILOS</a>
+                <a href="#portfolio" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">PORTFÓLIO</a>
+                <a href="#catalogo" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">CATÁLOGO</a>
+                <a href="#sobre" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">SOBRE</a>
+                <a href="#processo" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">PROCESSO</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center">
+                <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-sm border border-gold/70 text-gold hover:bg-gold hover:text-black font-cinzel text-xs tracking-widest font-bold transition duration-300 flex items-center gap-2 group">
+                    <i class="fa-brands fa-whatsapp text-sm group-hover:scale-110 transition-transform"></i>
+                    <span>AGENDAR TATUAGEM</span>
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobileMenuBtn" class="md:hidden text-gold p-2 focus:outline-none" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-dark-900 border-b border-gold/20 px-6 py-6 transition-all">
+            <div class="flex flex-col gap-4 font-cinzel text-sm tracking-wider">
+                <a href="#inicio" class="text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">INÍCIO</a>
+                <a href="#categorias" class="text-gray-300 hover:text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">ESTILOS</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">PORTFÓLIO</a>
+                <a href="#catalogo" class="text-gray-300 hover:text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">CATÁLOGO</a>
+                <a href="#sobre" class="text-gray-300 hover:text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">SOBRE O ARTISTA</a>
+                <a href="#processo" class="text-gray-300 hover:text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">COMO FUNCIONA</a>
+                <button onclick="openBookingModal(); toggleMobileMenu()" class="w-full mt-2 py-3 bg-gold text-black font-bold font-cinzel tracking-widest text-xs rounded-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    AGENDAR TATUAGEM
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative min-h-[92vh] flex items-center justify-center bg-dark-950 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2000&auto=format&fit=crop" 
+                 alt="Tatuador trabalhando em estúdio escuro" 
+                 class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-125 scale-105 transform hover:scale-100 transition duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-dark-950/90 via-transparent to-dark-950/90"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(8,8,8,0.85)_80%)]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+            <div class="max-w-2xl">
+                <p id="heroSlogan" class="text-xs sm:text-sm font-cinzel font-semibold tracking-[0.25em] text-gold/90 uppercase mb-3 drop-shadow">
+                    ARTE QUE MARCA. ESTILO QUE PERMANECE.
+                </p>
+
+                <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl font-bold tracking-wider text-white uppercase leading-[1.05] drop-shadow-2xl">
+                    GUSTAVO<br>
+                    <span class="text-white">MARTINS</span>
+                </h1>
+
+                <div class="flex items-center gap-3 my-4">
+                    <span class="text-gold text-sm">✦</span>
+                    <span class="font-cinzel text-xl sm:text-2xl tracking-[0.45em] text-gold font-light">TATTOO</span>
+                    <span class="text-gold text-sm">✦</span>
+                </div>
+
+                <p class="text-gray-400 text-sm sm:text-base max-w-lg mb-8 leading-relaxed font-light">
+                    Tatuagens autorais exclusivas focadas em Blackwork de alto contraste, Exotérica, traços finos e projetos anatômicos personalizados.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#portfolio" class="px-7 py-3.5 bg-gradient-to-r from-[#b38d38] via-[#d4af37] to-[#b38d38] hover:from-[#c9a044] hover:to-[#e5c158] text-black font-cinzel text-xs font-black tracking-[0.2em] rounded-sm transition duration-300 shadow-lg shadow-gold/20 flex items-center justify-center">
+                        VER PORTFÓLIO
+                    </a>
+
+                    <button onclick="openBookingModal()" class="px-7 py-3.5 bg-dark-900/80 hover:bg-dark-800 border border-white/20 hover:border-gold text-white hover:text-gold font-cinzel text-xs font-bold tracking-[0.2em] rounded-sm transition duration-300 flex items-center justify-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-base text-gold"></i>
+                        AGENDAR TATUAGEM
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <a href="#categorias" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-gold/60 hover:text-gold flex flex-col items-center gap-1 transition">
+            <span class="text-[9px] font-cinzel tracking-widest uppercase">Explorar</span>
+            <i class="fa-solid fa-chevron-down text-xs animate-bounce"></i>
+        </a>
+    </section>
+
+    <!-- SECTION: CATEGORIAS / ESTILOS (RENDERIZADO DINAMICAMENTE VIA CONFIG.JS) -->
+    <section id="categorias" class="py-24 bg-dark-950 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <span class="text-xs font-cinzel tracking-[0.3em] text-gold uppercase block mb-1">
+                    ENCONTRE SUA PRÓXIMA TATUAGEM
+                </span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold text-white tracking-widest uppercase">
+                    ESCOLHA UMA CATEGORIA
+                </h2>
+                <div class="ornament-divider">
+                    <span class="text-gold text-xs">✦</span>
+                </div>
+            </div>
+
+            <!-- Categories Dynamic Grid -->
+            <div id="categoriasGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5">
+                <!-- Injetado dinamicamente via config.js -->
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#portfolio" class="inline-block px-8 py-3 bg-transparent border border-gold/50 hover:border-gold hover:bg-gold/10 text-gold font-cinzel text-xs font-bold tracking-[0.25em] transition duration-300">
+                    VER TODAS AS ARTES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ALGUNS TRABALHOS (PORTFÓLIO - RENDERIZADO DINAMICAMENTE VIA CONFIG.JS) -->
+    <section id="portfolio" class="py-24 bg-dark-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold text-white tracking-widest uppercase">
+                    ALGUNS TRABALHOS
+                </h2>
+                <div class="ornament-divider">
+                    <span class="text-gold text-xs">✦</span>
+                </div>
+                <p class="text-gray-400 text-xs sm:text-sm font-light max-w-md mx-auto">
+                    Trabalhos cicatrizados e recém-feitos realizados em estúdio com os mais altos padrões.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div id="filterContainer" class="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mb-10 text-xs font-cinzel">
+                <button onclick="filterPortfolio('all')" class="filter-btn active px-4 py-2 bg-gold text-black font-bold tracking-wider rounded-sm transition">TODOS</button>
+                <button onclick="filterPortfolio('blackwork')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">BLACKWORK</button>
+                <button onclick="filterPortfolio('pescoco')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">PESCOÇO</button>
+                <button onclick="filterPortfolio('exoterica')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">EXOTÉRICA</button>
+                <button onclick="filterPortfolio('lettering')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">LETTERING</button>
+                <button onclick="filterPortfolio('fechamento')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">FECHAMENTOS</button>
+            </div>
+
+            <!-- Portfolio Dynamic Grid -->
+            <div id="portfolioGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+                <!-- Injetado dinamicamente via config.js -->
+            </div>
+
+            <div class="mt-12 text-center">
+                <button onclick="openBookingModal('Gostaria de ver o portfólio completo e consultar disponibilidade!')" class="px-8 py-3 bg-transparent border border-gold/50 hover:border-gold hover:bg-gold/10 text-gold font-cinzel text-xs font-bold tracking-[0.25em] transition duration-300">
+                    VER PORTFÓLIO COMPLETO
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: FLASH / CATÁLOGO DISPONÍVEL (RENDERIZADO DINAMICAMENTE VIA CONFIG.JS) -->
+    <section id="catalogo" class="py-24 bg-dark-950 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column (Copy) -->
+                <div class="lg:col-span-4">
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-black text-white leading-tight uppercase tracking-wider">
+                        ESCOLHA.<br>
+                        PERSONALIZE.<br>
+                        <span class="text-gold">TATUE.</span>
+                    </h2>
+                    <p class="text-gray-400 text-sm mt-4 font-light leading-relaxed">
+                        Artes autorais exclusivas e prontas para tatuar. Cada flash é tatuado apenas uma vez para garantir total exclusividade na sua pele.
+                    </p>
+                    <div class="mt-8">
+                        <button onclick="openBookingModal('Gostaria de solicitar o catálogo completo de flashes autorais!')" class="px-6 py-3.5 border border-gold/60 text-gold hover:bg-gold hover:text-black font-cinzel text-xs font-bold tracking-[0.2em] transition duration-300">
+                            VER CATÁLOGO COMPLETO
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Flash Cards Grid -->
+                <div class="lg:col-span-8">
+                    <div id="catalogoGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <!-- Injetado dinamicamente via config.js -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: DO DESENHO À PELE (PROCESSO) -->
+    <section id="processo" class="py-24 bg-dark-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold text-white tracking-widest uppercase">
+                    DO DESENHO À PELE
+                </h2>
+                <div class="ornament-divider">
+                    <span class="text-gold text-xs">✦</span>
+                </div>
+                <p class="text-gray-400 text-xs sm:text-sm font-light max-w-lg mx-auto">
+                    Entenda passo a passo como transformamos a sua ideia em uma arte marcante e eterna.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
+                    <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <span class="text-[10px] font-cinzel text-gold/80 tracking-widest">PASSO 01</span>
+                    <h3 class="font-cinzel font-bold text-white text-base tracking-wider uppercase mt-1 mb-2">
+                        ESCOLHA SUA ARTE
+                    </h3>
+                    <p class="text-xs text-gray-400 font-light leading-relaxed">
+                        Encontre uma ideia no catálogo ou apresente sua referência de preferência.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
+                    <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <span class="text-[10px] font-cinzel text-gold/80 tracking-widest">PASSO 02</span>
+                    <h3 class="font-cinzel font-bold text-white text-base tracking-wider uppercase mt-1 mb-2">
+                        FALE COMIGO
+                    </h3>
+                    <p class="text-xs text-gray-400 font-light leading-relaxed">
+                        Entre em contato pelo WhatsApp para conversarmos em detalhes sobre o projeto.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
+                    <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <span class="text-[10px] font-cinzel text-gold/80 tracking-widest">PASSO 03</span>
+                    <h3 class="font-cinzel font-bold text-white text-base tracking-wider uppercase mt-1 mb-2">
+                        PERSONALIZAÇÃO
+                    </h3>
+                    <p class="text-xs text-gray-400 font-light leading-relaxed">
+                        A arte pode ser adaptada com precisão ao seu corpo e ao estilo desejado.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
+                    <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <span class="text-[10px] font-cinzel text-gold/80 tracking-widest">PASSO 04</span>
+                    <h3 class="font-cinzel font-bold text-white text-base tracking-wider uppercase mt-1 mb-2">
+                        AGENDAMENTO
+                    </h3>
+                    <p class="text-xs text-gray-400 font-light leading-relaxed">
+                        Definimos todos os detalhes e marcamos sua sessão no estúdio.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-14 text-center">
+                <button onclick="openBookingModal()" class="px-8 py-3.5 bg-gold text-black font-cinzel font-bold text-xs tracking-widest rounded-sm hover:bg-gold-hover transition duration-300 shadow-lg shadow-gold/20">
+                    QUERO INICIAR MEU PROJETO AGORA
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: SOBRE O ARTISTA -->
+    <section id="sobre" class="py-24 bg-dark-950 relative border-t border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 rounded-sm overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="images\Fechamentos\WhatsApp Image 2026-09-02 at 23.42.57 (4).jpeg" 
+                             alt="Gustavo Martins Tatuador" 
+                             class="w-full h-[480px] object-cover filter grayscale contrast-125">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 w-full h-full border border-gold/30 -z-0 pointer-events-none hidden sm:block"></div>
+                </div>
+
+                <div class="lg:col-span-6 relative">
+                    <div class="absolute -right-10 top-1/2 -translate-y-1/2 font-gothic text-[160px] sm:text-[220px] text-gold/[0.04] select-none pointer-events-none z-0">
+                        GM
+                    </div>
+
+                    <div class="relative z-10">
+                        <span class="text-xs font-cinzel tracking-[0.3em] text-gold uppercase block mb-1">
+                            SOBRE O ARTISTA
+                        </span>
+                        
+                        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white uppercase tracking-wider mb-1">
+                            GUSTAVO MARTINS
+                        </h2>
+                        
+                        <p class="text-xs font-cinzel tracking-[0.25em] text-gold/80 uppercase mb-6 font-semibold">
+                            TATUADOR | ARTISTA
+                        </p>
+
+                        <div class="w-12 h-[1px] bg-gold/60 mb-6"></div>
+
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6 font-light">
+                            "Cada tatuagem carrega uma história, uma personalidade e uma escolha. Meu trabalho é transformar essa ideia em uma arte que faça sentido para quem vai carregá-la."
+                        </p>
+
+                        <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-8 font-light">
+                            Com anos de dedicação aperfeiçoando técnicas em Blackwork de precisão, arte exotérica e projetos anatômicos personalizados, ofereço um atendimento exclusivo focado no conforto, biossegurança rigorosa e estética refinada.
+                        </p>
+
+                        <button onclick="openBookingModal('Olá Gustavo, gostaria de agendar uma consulta sobre uma ideia de tatuagem!')" class="px-7 py-3.5 bg-dark-900 border border-gold text-gold hover:bg-gold hover:text-black font-cinzel text-xs font-bold tracking-[0.2em] transition duration-300">
+                            CONHEÇA MEU TRABALHO
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: INSTAGRAM FEED (@GUSTAVOMARTINSTATTOO - RENDERIZADO VIA CONFIG.JS) -->
+    <section class="py-20 bg-dark-900 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-10">
+                <a id="instaHeaderLink" href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 font-cinzel text-base sm:text-lg font-bold text-gold tracking-widest hover:underline">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                    <span id="instaHeaderUser">@GUSTAVOMARTINSTATTOO</span>
+                </a>
+            </div>
+
+            <!-- Instagram Grid -->
+            <div id="instagramGrid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+                <!-- Injetado dinamicamente via config.js -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOTTOM CTA BANNER -->
+    <section class="py-16 bg-gradient-to-r from-dark-950 via-dark-900 to-dark-950 border-t border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                
+                <div>
+                    <h2 class="font-cinzel text-2xl sm:text-3xl lg:text-4xl font-bold text-white uppercase tracking-wider">
+                        PRONTO PARA SUA<br>
+                        PRÓXIMA <span class="text-gold">TATUAGEM?</span>
+                    </h2>
+                </div>
+
+                <div>
+                    <p class="text-gray-300 text-sm sm:text-base font-light">
+                        Sua ideia pode começar aqui.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-1">Orçamento rápido e sem compromisso via WhatsApp.</p>
+                </div>
+
+                <div>
+                    <button onclick="openBookingModal()" class="px-8 py-4 bg-gradient-to-r from-[#b38d38] via-[#d4af37] to-[#b38d38] hover:from-[#c9a044] hover:to-[#e5c158] text-black font-cinzel text-xs font-black tracking-[0.2em] rounded-sm transition duration-300 shadow-xl shadow-gold/20 flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>AGENDAR PELO WHATSAPP</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-dark-950 text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/5 pb-8">
+                
+                <!-- Logo -->
+                <div class="flex flex-col items-center md:items-start">
+                    <span class="font-cinzel font-bold text-base tracking-[0.25em] text-white">
+                        GUSTAVO MARTINS
+                    </span>
+                    <span class="text-[9px] tracking-[0.45em] text-gold flex items-center gap-1 mt-0.5">
+                        <span>✦</span> TATTOO <span>✦</span>
+                    </span>
+                </div>
+
+                <!-- Social Links with Icons -->
+                <div class="flex items-center gap-8 font-cinzel text-[11px] tracking-wider text-gray-300">
+                    <a id="footerInstaLink" href="https://instagram.com" target="_blank" class="hover:text-gold transition flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-gold"></i> INSTAGRAM
+                    </a>
+                    <button onclick="openBookingModal()" class="hover:text-gold transition flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-gold"></i> WHATSAPP
+                    </button>
+                    <button onclick="openLocationModal()" class="hover:text-gold transition flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-gold"></i> LOCALIZAÇÃO
+                    </button>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center md:text-right text-[11px] text-gray-500 font-light">
+                    © 2026 Gustavo Martins Tattoo.<br>
+                    Todos os direitos reservados.
+                </div>
+
+            </div>
+
+            <div class="pt-6 text-center text-[10px] text-gray-600">
+                Para trocar imagens e artes do catálogo facilmente, edite o arquivo <code class="text-gold">config.js</code>.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <button onclick="openBookingModal()" class="fixed bottom-6 right-6 z-40 bg-gold text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 hover:bg-gold-hover transition-all duration-300 animate-pulse-glow" title="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </button>
+
+
+    <!-- ================= MODALS & INTERACTIVE POPUPS ================= -->
+
+    <!-- 1. WHATSAPP BOOKING & ESTIMATE MODAL -->
+    <div id="bookingModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-dark-900 border border-gold/40 rounded-sm max-w-lg w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto shadow-2xl">
+            <button onclick="closeModal('bookingModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-cinzel tracking-[0.3em] text-gold uppercase block">ORÇAMENTO & AGENDAMENTO</span>
+                <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-white uppercase">Inicie seu Projeto</h3>
+                <div class="ornament-divider my-2">
+                    <span class="text-gold text-xs">✦</span>
+                </div>
+                <p class="text-xs text-gray-400 font-light">Preencha os detalhes abaixo para gerar sua mensagem direta no WhatsApp do Gustavo Martins.</p>
+            </div>
+
+            <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4 text-xs font-sans">
+                <div>
+                    <label class="block text-gray-300 font-cinzel tracking-wider mb-1">SEU NOME</label>
+                    <input type="text" id="clientName" required placeholder="Ex: Felipe Oliveira" class="w-full bg-dark-950 border border-white/10 rounded-sm p-3 text-white focus:border-gold focus:outline-none">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-300 font-cinzel tracking-wider mb-1">ESTILO PREFERIDO</label>
+                        <select id="clientStyle" class="w-full bg-dark-950 border border-white/10 rounded-sm p-3 text-white focus:border-gold focus:outline-none">
+                            <option value="Blackwork">Blackwork</option>
+                            <option value="Pescoço">Pescoço</option>
+                            <option value="Exotérica / Dark">Exotérica / Dark</option>
+                            <option value="Fine Line">Fine Line</option>
+                            <option value="Lettering">Lettering</option>
+                            <option value="Fechamento de Braço / Costas">Fechamento</option>
+                            <option value="Flash Art do Catálogo">Flash do Catálogo</option>
+                            <option value="Outro Estilo">Outro Estilo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 font-cinzel tracking-wider mb-1">LOCAL DO CORPO</label>
+                        <input type="text" id="bodyLocation" placeholder="Ex: Antebraço, Costela, Coxa" class="w-full bg-dark-950 border border-white/10 rounded-sm p-3 text-white focus:border-gold focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-300 font-cinzel tracking-wider mb-1">TAMANHO APROXIMADO (CM)</label>
+                        <input type="text" id="approxSize" placeholder="Ex: 15cm x 8cm" class="w-full bg-dark-950 border border-white/10 rounded-sm p-3 text-white focus:border-gold focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 font-cinzel tracking-wider mb-1">PERÍODO PREFERIDO</label>
+                        <select id="clientPeriod" class="w-full bg-dark-950 border border-white/10 rounded-sm p-3 text-white focus:border-gold focus:outline-none">
+                            <option value="Dias de semana (Tarde)">Dias de semana (Tarde)</option>
+                            <option value="Dias de semana (Noite)">Dias de semana (Noite)</option>
+                            <option value="Sábado">Sábado</option>
+                            <option value="Qualquer horário flexível">Qualquer horário</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-gray-300 font-cinzel tracking-wider mb-1">DETALHES OU REFERÊNCIA DA ARTE</label>
+                    <textarea id="projectNotes" rows="3" placeholder="Descreva o que você imagina ou mencione se tem foto de referência..." class="w-full bg-dark-950 border border-white/10 rounded-sm p-3 text-white focus:border-gold focus:outline-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-[#b38d38] via-[#d4af37] to-[#b38d38] text-black font-cinzel font-bold text-xs tracking-widest rounded-sm hover:from-[#c9a044] hover:to-[#e5c158] transition flex items-center justify-center gap-2 mt-4">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    ENVIAR PROJETO NO WHATSAPP
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. FLASH RESERVATION MODAL -->
+    <div id="flashModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-dark-900 border border-gold/50 rounded-sm max-w-md w-full p-6 relative shadow-2xl text-center">
+            <button onclick="closeModal('flashModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span class="text-[10px] font-cinzel tracking-[0.3em] text-gold uppercase block">RESERVA DE ARTE EXCLUSIVA</span>
+            <h3 id="flashTitle" class="font-cinzel text-xl font-bold text-white uppercase mt-1">Nome do Flash</h3>
+            <div class="text-2xl font-cinzel font-bold text-gold my-3" id="flashPrice">R$ 000</div>
+            
+            <p id="flashDescription" class="text-xs text-gray-400 font-light mb-6">
+                Flashes autorais têm vagas limitadas para garantir exclusividade na sua pele. Envie sua mensagem para reservar o horário desta arte.
+            </p>
+
+            <button onclick="confirmFlashBooking()" class="w-full py-3.5 bg-gold text-black font-cinzel font-bold text-xs tracking-widest rounded-sm hover:bg-gold-hover transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                RESERVAR ESTE FLASH VIA WHATSAPP
+            </button>
+        </div>
+    </div>
+
+    <!-- 3. LIGHTBOX MODAL (FOR TATTOO PHOTOS) -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4">
+        <button onclick="closeModal('lightboxModal')" class="absolute top-6 right-6 text-gold hover:text-white text-2xl z-20">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-3xl w-full flex flex-col items-center">
+            <img id="lightboxImg" src="" alt="Tatuagem Ampliada" class="max-h-[75vh] w-auto object-contain border border-gold/30 rounded-sm shadow-2xl">
+            <div class="mt-4 text-center">
+                <span id="lightboxCategory" class="text-[10px] font-cinzel text-gold tracking-widest uppercase">CATEGORIA</span>
+                <h4 id="lightboxTitle" class="text-lg font-cinzel font-bold text-white">Título do Trabalho</h4>
+                <button onclick="openBookingModal('Gostei muito deste trabalho e queria um orçamento semelhante!')" class="mt-3 px-6 py-2 border border-gold/70 text-gold hover:bg-gold hover:text-black font-cinzel text-xs tracking-widest font-bold transition">
+                    QUERO UMA PARECIDA
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. LOCATION / STUDIO MODAL -->
+    <div id="locationModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-dark-900 border border-gold/40 rounded-sm max-w-md w-full p-6 relative text-center">
+            <button onclick="closeModal('locationModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <i class="fa-solid fa-location-dot text-3xl text-gold mb-3"></i>
+            <h3 class="font-cinzel text-xl font-bold text-white uppercase">Estúdio Privado</h3>
+            <p class="text-xs text-gold tracking-widest mt-1">ATENDIMENTO EXCLUSIVO COM HORA MARCADA</p>
+            <p id="locationDescription" class="text-xs text-gray-400 mt-4 leading-relaxed font-light">
+                Ambiente climatizado, com música ambiente selecionada, café especial e rigorosos protocolos de biossegurança descartável e esterilização hospitalar.
+            </p>
+            <div id="locationBox" class="bg-dark-950 p-3 mt-4 border border-white/10 rounded text-xs text-gray-300">
+                📍 São Paulo - SP | Endereço completo enviado na confirmação do agendamento.
+            </div>
+            <button onclick="openBookingModal('Olá, gostaria de agendar uma visita/sessão no estúdio!')" class="w-full mt-5 py-3 bg-gold text-black font-cinzel font-bold text-xs tracking-widest rounded-sm">
+                AGENDAR SESSÃO NO ESTÚDIO
+            </button>
+        </div>
+    </div>
+
+
+    <!-- IMPORTA O ARQUIVO DE CONFIGURAÇÕES DE DADOS E IMAGENS -->
+    <script src="config.js"></script>
+
+    <!-- JAVASCRIPT LOGIC & DYNAMIC RENDER -->
+    <script>
+        // Fallback default image in case any local image is missing
+        const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop";
+
+        let currentFlashName = '';
+        let currentFlashPrice = '';
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        function toggleMobileMenu() {
+            if (mobileMenu) mobileMenu.classList.add('hidden');
+        }
+
+        /* ==========================================================================
+           RENDERIZAÇÃO DINÂMICA DAS SEÇÕES VIA CONFIG.JS
+           ========================================================================== */
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initEstudioData();
+            renderCategorias();
+            renderPortfolio();
+            renderCatalogoFlash();
+            renderInstagram();
+        });
+
+        function initEstudioData() {
+            if (typeof ESTUDIO_CONFIG === 'undefined') return;
+
+            const instaHeaderLink = document.getElementById('instaHeaderLink');
+            const instaHeaderUser = document.getElementById('instaHeaderUser');
+            const footerInstaLink = document.getElementById('footerInstaLink');
+            const locationBox = document.getElementById('locationBox');
+
+            if (instaHeaderLink && ESTUDIO_CONFIG.instagramLink) instaHeaderLink.href = ESTUDIO_CONFIG.instagramLink;
+            if (instaHeaderUser && ESTUDIO_CONFIG.instagramUser) instaHeaderUser.textContent = ESTUDIO_CONFIG.instagramUser;
+            if (footerInstaLink && ESTUDIO_CONFIG.instagramLink) footerInstaLink.href = ESTUDIO_CONFIG.instagramLink;
+            if (locationBox && ESTUDIO_CONFIG.enderecoResumido) locationBox.innerHTML = `📍 ${ESTUDIO_CONFIG.enderecoResumido}`;
+        }
+
+        // 1. Renderiza Categorias
+        function renderCategorias() {
+            const container = document.getElementById('categoriasGrid');
+            if (!container || typeof CATEGORIAS_SITE === 'undefined') return;
+
+            container.innerHTML = CATEGORIAS_SITE.map(cat => `
+                <div onclick="filterPortfolio('${cat.id}')" class="group relative bg-dark-900 rounded-sm overflow-hidden border border-white/10 hover:border-gold/60 transition-all duration-500 cursor-pointer flex flex-col h-[380px]">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="${cat.imagem}" 
+                             alt="${cat.nome}" 
+                             onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
+                             class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/30 to-transparent"></div>
+                        <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-dark-950/80 border border-gold/40 flex items-center justify-center text-gold text-xs group-hover:rotate-45 transition-transform duration-500">
+                            <i class="${cat.icone || 'fa-solid fa-gem'}"></i>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between bg-dark-900">
+                        <div>
+                            <div class="text-gold text-lg mb-1">
+                                <i class="${cat.icone || 'fa-solid fa-gem'}"></i>
+                            </div>
+                            <h3 class="font-cinzel font-bold text-white text-base tracking-wider uppercase group-hover:text-gold transition">
+                                ${cat.nome}
+                            </h3>
+                            <p class="text-xs text-gray-400 mt-1.5 leading-relaxed font-light">
+                                ${cat.descricao}
+                            </p>
+                        </div>
+                        <span class="text-[10px] font-cinzel text-gold tracking-widest flex items-center gap-1 mt-4 group-hover:translate-x-1 transition">
+                            VER TRABALHOS <i class="fa-solid fa-arrow-right text-[8px]"></i>
+                        </span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 2. Renderiza Portfólio
+        function renderPortfolio() {
+            const container = document.getElementById('portfolioGrid');
+            if (!container || typeof PORTFOLIO_TRABALHOS === 'undefined') return;
+
+            container.innerHTML = PORTFOLIO_TRABALHOS.map(item => `
+                <div class="portfolio-item group relative aspect-[3/4] bg-dark-950 overflow-hidden border border-white/10 rounded-sm cursor-pointer" 
+                     data-category="${item.categoria}" 
+                     onclick="openLightbox('${item.imagem}', '${item.titulo}', '${item.categoriaLabel}')">
+                    <img src="${item.imagem}" 
+                         alt="${item.titulo}" 
+                         onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
+                         class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-110 group-hover:brightness-90 transition duration-700">
+                    <div class="absolute inset-0 bg-dark-950/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-[9px] font-cinzel text-gold tracking-widest uppercase">${item.categoriaLabel}</span>
+                        <h4 class="text-xs sm:text-sm font-cinzel font-bold text-white">${item.titulo}</h4>
+                        <span class="text-[10px] text-gray-400 mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-[8px] text-gold"></i> Ver detalhes</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 3. Renderiza Catálogo Flash
+        function renderCatalogoFlash() {
+            const container = document.getElementById('catalogoGrid');
+            if (!container || typeof CATALOGO_FLASH === 'undefined') return;
+
+            container.innerHTML = CATALOGO_FLASH.map((flash, index) => {
+                const formattedPrice = flash.preco.toString().replace(/\D/g, '');
+                return `
+                <div class="flash-card group cursor-pointer flex flex-col bg-dark-900 border border-white/10 hover:border-gold/60 transition duration-300 rounded-sm overflow-hidden" 
+                     onclick="openFlashModal('${flash.titulo}', '${formattedPrice}', '${flash.descricao || ''}')">
+                    <div class="flash-paper p-3 flex items-center justify-center aspect-[4/5] relative overflow-hidden">
+                        <img src="${flash.imagem}" 
+                             alt="${flash.titulo}" 
+                             onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
+                             class="w-full h-full object-cover filter contrast-125 group-hover:scale-105 transition duration-500 rounded-sm">
+                        <span class="absolute top-2 right-2 text-[9px] font-cinzel text-black font-bold bg-white/70 backdrop-blur-sm px-2 py-0.5 rounded border border-black/20 shadow-sm">${flash.tag || ('#' + (index + 1).toString().padStart(2, '0'))}</span>
+                    </div>
+                    <div class="py-3 px-2 text-center bg-dark-900 border-t border-white/5">
+                        <p class="text-[11px] font-cinzel text-gray-300 truncate px-1">${flash.titulo}</p>
+                        <span class="text-gold font-cinzel font-bold text-sm tracking-widest flex items-center justify-center gap-1.5 mt-0.5 group-hover:text-gold-hover">
+                            <span class="text-[10px]">✦</span> R$ ${formattedPrice} <span class="text-[10px]">✦</span>
+                        </span>
+                    </div>
+                </div>
+            `;
+            }).join('');
+        }
+
+        // 4. Renderiza Instagram Feed
+        function renderInstagram() {
+            const container = document.getElementById('instagramGrid');
+            if (!container || typeof INSTAGRAM_POSTS === 'undefined') return;
+
+            const instaUrl = (typeof ESTUDIO_CONFIG !== 'undefined' && ESTUDIO_CONFIG.instagramLink) ? ESTUDIO_CONFIG.instagramLink : 'https://instagram.com';
+
+            const postsHtml = INSTAGRAM_POSTS.slice(0, 6).map(post => `
+                <div class="aspect-square bg-dark-950 overflow-hidden border border-white/10 group cursor-pointer" 
+                     onclick="openLightbox('${post.imagem}', '${post.titulo}', 'Instagram')">
+                    <img src="${post.imagem}" 
+                         alt="${post.titulo}" 
+                         onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
+                         class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-110 transition duration-500">
+                </div>
+            `).join('');
+
+            const ctaHtml = `
+                <a href="${instaUrl}" target="_blank" class="aspect-square bg-dark-950 border border-gold/40 hover:border-gold hover:bg-dark-800 transition duration-300 flex flex-col items-center justify-center p-3 text-center group">
+                    <i class="fa-brands fa-instagram text-2xl text-gold mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] font-cinzel font-bold text-white tracking-widest uppercase">
+                        VER NO<br>INSTAGRAM
+                    </span>
+                </a>
+            `;
+
+            container.innerHTML = postsHtml + ctaHtml;
+        }
+
+        // Filter Portfolio Items
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            const portfolioSection = document.getElementById('portfolio');
+            if (portfolioSection) {
+                portfolioSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-gold', 'text-black');
+                btn.classList.add('bg-dark-800', 'text-gray-300');
+            });
+
+            const activeBtn = Array.from(buttons).find(b => b.textContent.toLowerCase().includes(category.toLowerCase()));
+            if (activeBtn) {
+                activeBtn.classList.add('bg-gold', 'text-black');
+                activeBtn.classList.remove('bg-dark-800', 'text-gray-300');
+            }
+
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (category === 'all' || itemCat === category || (category === 'fechamento' && (itemCat === 'fechamento' || itemCat === 'blackwork'))) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Open Lightbox
+        function openLightbox(imgSrc, title, category) {
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxTitle').textContent = title;
+            document.getElementById('lightboxCategory').textContent = category;
+            openModal('lightboxModal');
+        }
+
+        // Open Flash Modal
+        function openFlashModal(title, price, desc = '') {
+            currentFlashName = title;
+            currentFlashPrice = price;
+            document.getElementById('flashTitle').textContent = title;
+            document.getElementById('flashPrice').textContent = `✦ R$ ${price} ✦`;
+            if (desc) {
+                document.getElementById('flashDescription').textContent = desc;
+            }
+            openModal('flashModal');
+        }
+
+        function confirmFlashBooking() {
+            closeModal('flashModal');
+            const phone = (typeof ESTUDIO_CONFIG !== 'undefined' && ESTUDIO_CONFIG.telefoneWhatsapp) ? ESTUDIO_CONFIG.telefoneWhatsapp : "5551989487632";
+            const message = `Olá Gustavo Martins! Tenho interesse em reservar o Flash exclusivo "${currentFlashName}" no valor de R$ ${currentFlashPrice}. Como podemos agendar?`;
+            window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        // Open WhatsApp Booking Modal
+        function openBookingModal(customNote = '') {
+            if (customNote) {
+                document.getElementById('projectNotes').value = customNote;
+            }
+            openModal('bookingModal');
+        }
+
+        function openLocationModal() {
+            openModal('locationModal');
+        }
+
+        // Generic Modal Helpers
+        function openModal(modalId) {
+            const m = document.getElementById(modalId);
+            if (m) {
+                m.classList.remove('hidden');
+                m.classList.add('flex');
+            }
+        }
+
+        function closeModal(modalId) {
+            const m = document.getElementById(modalId);
+            if (m) {
+                m.classList.add('hidden');
+                m.classList.remove('flex');
+            }
+        }
+
+        // Close on background click
+        window.addEventListener('click', (e) => {
+            const modals = ['bookingModal', 'flashModal', 'lightboxModal', 'locationModal'];
+            modals.forEach(id => {
+                const modal = document.getElementById(id);
+                if (e.target === modal) {
+                    closeModal(id);
+                }
+            });
+        });
+
+        // WhatsApp Form Submit Handler
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value;
+            const style = document.getElementById('clientStyle').value;
+            const location = document.getElementById('bodyLocation').value || 'A definir';
+            const size = document.getElementById('approxSize').value || 'A definir';
+            const period = document.getElementById('clientPeriod').value;
+            const notes = document.getElementById('projectNotes').value || 'Sem observações adicionais.';
+
+            const message = `*ORÇAMENTO / AGENDAMENTO - GUSTAVO MARTINS TATTOO*\n\n` +
+                            `👤 *Nome:* ${name}\n` +
+                            `🎨 *Estilo:* ${style}\n` +
+                            `📍 *Local do corpo:* ${location}\n` +
+                            `📏 *Tamanho:* ${size}\n` +
+                            `⏰ *Disponibilidade:* ${period}\n` +
+                            `📝 *Detalhes:* ${notes}\n\n` +
+                            `Gostaria de verificar disponibilidade de data e orçamento!`;
+
+            const phone = (typeof ESTUDIO_CONFIG !== 'undefined' && ESTUDIO_CONFIG.telefoneWhatsapp) ? ESTUDIO_CONFIG.telefoneWhatsapp : "5551989487632";
+            window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`, '_blank');
+            closeModal('bookingModal');
+        }
+    </script>
+</body>
+</html>
