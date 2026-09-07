@@ -23,8 +23,8 @@ const ESTUDIO_CONFIG = {
     nome: "GUSTAVO MARTINS",
     subtitulo: "TATTOO",
     slogan: "ARTE QUE MARCA. ESTILO QUE PERMANECE.",
-    telefoneWhatsapp: "5551", // Coloque o DDD + Número sem traços (ex: 5551989487632)
-    instagramUser: "@GUSTAVOMARTINSTATTOO",
+    telefoneWhatsapp: "5551989487632 o DDD + Número sem traços (ex: 5551989487632)
+    instagramUser: "@martinsgustj2"
     instagramLink: "https://www.instagram.com/martinsgustj2/",
     enderecoResumido: "Viamão - RS | Estúdio Privado com Hora Marcada",
 };
@@ -199,7 +199,7 @@ const PORTFOLIO_TRABALHOS = [
 
 
 /* ==========================================================================
-   4. FEED DO INSTAGRAM (@GUSTAVOMARTINSTATTOO)
+   4. FEED DO INSTAGRAM (@martinsgustj)
    Miniaturas que aparecem na grade acima do rodapé.
    ========================================================================== */
 const INSTAGRAM_POSTS = [
