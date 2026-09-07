@@ -180,7 +180,7 @@
     <!-- HERO SECTION -->
     <section id="inicio" class="relative min-h-[92vh] flex items-center justify-center bg-dark-950 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/image.jpeg" 
+            <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2000&auto=format&fit=crop" 
                  alt="Tatuador trabalhando em estúdio escuro" 
                  class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-125 scale-105 transform hover:scale-100 transition duration-1000">
             <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-transparent"></div>
@@ -788,22 +788,25 @@
             if (!container || typeof CATALOGO_FLASH === 'undefined') return;
 
             container.innerHTML = CATALOGO_FLASH.map((flash, index) => {
-                const formattedPrice = flash.preco.toString().replace(/\D/g, '');
+                const hasPrice = flash.preco && flash.preco.toString().trim() !== '';
+                const formattedPrice = hasPrice ? flash.preco.toString().replace(/\D/g, '') : '';
+                const priceBadge = hasPrice 
+                    ? `<span class="text-gold font-cinzel font-bold text-sm tracking-widest flex items-center justify-center gap-1.5 mt-0.5 group-hover:text-gold-hover"><span class="text-[10px]">✦</span> R$ ${formattedPrice} <span class="text-[10px]">✦</span></span>`
+                    : `<span class="text-gold font-cinzel font-semibold text-xs tracking-widest flex items-center justify-center gap-1.5 mt-1 group-hover:text-gold-hover"><span class="text-[8px]">✦</span> RESERVAR FLASH <span class="text-[8px]">✦</span></span>`;
+
                 return `
                 <div class="flash-card group cursor-pointer flex flex-col bg-dark-900 border border-white/10 hover:border-gold/60 transition duration-300 rounded-sm overflow-hidden" 
-                     onclick="openFlashModal('${flash.titulo}', '${formattedPrice}', '${flash.descricao || ''}')">
+                     onclick="openFlashModal('${flash.titulo || 'Flash Disponível'}', '${formattedPrice}', '${flash.descricao || ''}')">
                     <div class="flash-paper p-3 flex items-center justify-center aspect-[4/5] relative overflow-hidden">
                         <img src="${safeImgUrl(flash.imagem)}" 
-                             alt="${flash.titulo}" 
+                             alt="${flash.titulo || 'Flash'}" 
                              onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
                              class="w-full h-full object-cover filter contrast-125 group-hover:scale-105 transition duration-500 rounded-sm">
                         <span class="absolute top-2 right-2 text-[9px] font-cinzel text-black font-bold bg-white/70 backdrop-blur-sm px-2 py-0.5 rounded border border-black/20 shadow-sm">${flash.tag || ('#' + (index + 1).toString().padStart(2, '0'))}</span>
                     </div>
                     <div class="py-3 px-2 text-center bg-dark-900 border-t border-white/5">
                         <p class="text-[11px] font-cinzel text-gray-300 truncate px-1">${flash.titulo || 'Flash Disponível'}</p>
-                        <span class="text-gold font-cinzel font-bold text-sm tracking-widest flex items-center justify-center gap-1.5 mt-0.5 group-hover:text-gold-hover">
-                            <span class="text-[10px]">✦</span> R$ ${formattedPrice} <span class="text-[10px]">✦</span>
-                        </span>
+                        ${priceBadge}
                     </div>
                 </div>
             `;
@@ -879,7 +882,13 @@
             currentFlashName = title;
             currentFlashPrice = price;
             document.getElementById('flashTitle').textContent = title;
-            document.getElementById('flashPrice').textContent = `✦ R$ ${price} ✦`;
+            const priceEl = document.getElementById('flashPrice');
+            if (price && price.toString().trim() !== '') {
+                priceEl.style.display = 'block';
+                priceEl.textContent = `✦ R$ ${price} ✦`;
+            } else {
+                priceEl.style.display = 'none';
+            }
             if (desc) {
                 document.getElementById('flashDescription').textContent = desc;
             }
@@ -889,7 +898,12 @@
         function confirmFlashBooking() {
             closeModal('flashModal');
             const phone = (typeof ESTUDIO_CONFIG !== 'undefined' && ESTUDIO_CONFIG.telefoneWhatsapp) ? ESTUDIO_CONFIG.telefoneWhatsapp : "5551989487632";
-            const message = `Olá Gustavo Martins! Tenho interesse em reservar o Flash exclusivo "${currentFlashName}" no valor de R$ ${currentFlashPrice}. Como podemos agendar?`;
+            let message = '';
+            if (currentFlashPrice && currentFlashPrice.toString().trim() !== '') {
+                message = `Olá Gustavo Martins! Tenho interesse em reservar o Flash exclusivo "${currentFlashName}" no valor de R$ ${currentFlashPrice}. Como podemos agendar?`;
+            } else {
+                message = `Olá Gustavo Martins! Tenho interesse em consultar informações e reservar o Flash exclusivo "${currentFlashName}". Como podemos agendar?`;
+            }
             window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`, '_blank');
         }
 
