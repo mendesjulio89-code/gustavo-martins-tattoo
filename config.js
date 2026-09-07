@@ -40,7 +40,7 @@ const CATALOGO_FLASH = [
         tag: "#01",
         titulo: "Fine Line Mão",
         preco: "150",
-        imagem: "images/flash/flash-1.jpeg",
+        imagem: "images/flash/imagem_5.jpeg",
         descricao: "Arte autoral exclusiva pronta para tatuar na mão, pulso ou pescoço."
     },
     {
@@ -48,7 +48,7 @@ const CATALOGO_FLASH = [
         tag: "#02",
         titulo: "Flash Exotérica",
         preco: "350",
-        imagem: "images/flash/flash-2.jpeg",
+        imagem: "images/flash/imagem_4.jpeg",
         descricao: "Composição ornamental detalhada em preto puro."
     },
     {
@@ -56,7 +56,7 @@ const CATALOGO_FLASH = [
         tag: "#03",
         titulo: "Flash com Free Hand",
         preco: "350",
-        imagem: "images/flash/imagem-3.jpeg",
+        imagem: "images/flash/imagem_8.jpeg",
         descricao: "Botânica sombria com geometria fina e detalhes pontilhados."
     },
     {
@@ -64,7 +64,7 @@ const CATALOGO_FLASH = [
         tag: "#04",
         titulo: "Arcano Baphomet Dark",
         preco: "400",
-        imagem: "images/flash/flash-4.jpeg",
+        imagem: "images/flash/imagem_7.jpeg",
         descricao: "Arte mística com forte presença, contraste e sombreamento denso."
     },
     {
@@ -72,7 +72,7 @@ const CATALOGO_FLASH = [
         tag: "#05",
         titulo: "Blackwork Adaga",
         preco: "380",
-        imagem: "images/flash/flash-5.jpeg",
+        imagem: "images/flash/imagem_5.jpeg",
         descricao: "Adaga clássica com sombras sólidas e alto contraste."
     }
 ];
@@ -87,7 +87,7 @@ const CATEGORIAS_SITE = [
         id: "blackwork",
         nome: "BLACKWORK",
         descricao: "Contraste marcante, sombras densas e presença imponente na pele.",
-        imagem: "images/fechamentos/pescoco-1.jpeg",
+        imagem: "images/fechamentos/imagem_2.jpeg",
         icone: "fa-solid fa-gem"
     },
     {
@@ -108,14 +108,14 @@ const CATEGORIAS_SITE = [
         id: "fineline",
         nome: "FINE LINE",
         descricao: "Traços delicados, elegância minimalista e precisão milimétrica.",
-        imagem: "images/flash/flash-1.jpeg",
+        imagem: "images/flash/imagem_4.jpeg",
         icone: "fa-solid fa-feather-pointed"
     },
     {
         id: "fechamento",
         nome: "FECHAMENTOS",
         descricao: "Projetos de grande escala pensados exclusivamente para a anatomia do corpo.",
-        imagem: "images/fechamentos/fechamentos-1.jpeg",
+        imagem: "images/fechamentos/imagem_1.jpeg",
         icone: "fa-solid fa-shield-halved"
     }
 ];
@@ -137,7 +137,7 @@ const PORTFOLIO_TRABALHOS = [
         titulo: "Adaga & Fechamento Blackwork",
         categoria: "blackwork",
         categoriaLabel: "BLACKWORK",
-        imagem: "images/fechamentos/pescoco-1.jpeg"
+        imagem: "images/fechamentos/imagem_2.jpeg"
     },
     {
         titulo: "Pescoço Free Hand Sombreado",
@@ -173,7 +173,7 @@ const PORTFOLIO_TRABALHOS = [
         titulo: "Fechamento de Braço Completo",
         categoria: "fechamento",
         categoriaLabel: "FECHAMENTO",
-        imagem: "images/fechamentos/fechamentos-3.jpeg"
+        imagem: "images/fechamentos/imagem_3.jpeg"
     },
     {
         titulo: "Pescoço Ornamental Floral",
@@ -209,7 +209,7 @@ const INSTAGRAM_POSTS = [
     },
     {
         titulo: "Post Instagram: Fechamento Blackwork",
-        imagem: "images/fechamentos/fechamentos2.jpeg"
+        imagem: "images/fechamentos/imagem_2.jpeg"
     },
     {
         titulo: "Post Instagram: Figura Mística",
