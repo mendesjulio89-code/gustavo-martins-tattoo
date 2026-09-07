@@ -137,7 +137,7 @@ const PORTFOLIO_TRABALHOS = [
         titulo: "Adaga & Fechamento Blackwork",
         categoria: "blackwork",
         categoriaLabel: "BLACKWORK",
-        imagem: "images/fechamentos/fechamentos-2.jpeg"
+        imagem: "images/fechamentos/fechamentos2.jpeg"
     },
     {
         titulo: "Pescoço Free Hand Sombreado",
