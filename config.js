@@ -56,7 +56,7 @@ const CATALOGO_FLASH = [
         tag: "#03",
         titulo: "Flash com Free Hand",
         preco: "350",
-        imagem: "images/flash/flash-3.jpeg",
+        imagem: "images/flash/imagem-3.jpeg",
         descricao: "Botânica sombria com geometria fina e detalhes pontilhados."
     },
     {
