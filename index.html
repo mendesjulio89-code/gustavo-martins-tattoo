@@ -53,19 +53,11 @@
         }
     </script>
     <style>
-        /* Custom Styles & Dark Aesthetic */
         body {
             background-color: #080808;
             color: #d1d5db;
             font-family: 'Montserrat', sans-serif;
             overflow-x: hidden;
-        }
-
-        /* Gold Gradient Text */
-        .text-gold-gradient {
-            background: linear-gradient(135deg, #f6e6b4 0%, #c9a44c 50%, #9a772c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         .gold-border-glow {
@@ -77,7 +69,6 @@
             box-shadow: 0 0 18px rgba(201, 164, 76, 0.2);
         }
 
-        /* Vintage divider */
         .ornament-divider {
             display: flex;
             align-items: center;
@@ -92,7 +83,6 @@
             background: linear-gradient(90deg, transparent, #c9a44c, transparent);
         }
 
-        /* Flash art card look */
         .flash-paper {
             background: radial-gradient(circle at center, #f0ebd9 0%, #dfd6be 70%, #c5b99e 100%);
             box-shadow: inset 0 0 20px rgba(0,0,0,0.18), 0 10px 25px rgba(0,0,0,0.6);
@@ -106,7 +96,6 @@
             pointer-events: none;
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -122,7 +111,6 @@
             background: #c9a44c;
         }
 
-        /* Glow animation */
         @keyframes pulseGlow {
             0%, 100% { box-shadow: 0 0 15px rgba(201, 164, 76, 0.4); }
             50% { box-shadow: 0 0 30px rgba(201, 164, 76, 0.8); }
@@ -134,16 +122,15 @@
 </head>
 <body class="selection:bg-gold selection:text-black">
 
-    <!-- Top Notification / Announcement Bar -->
+    <!-- Top Announcement Bar -->
     <div class="bg-dark-950 border-b border-gold/15 py-1.5 text-center text-xs tracking-widest text-gold/90 font-cinzel">
         ✦ AGENDA ABERTA PARA ESTE MÊS — ATENDIMENTO EXCLUSIVO COM HORA MARCADA ✦
     </div>
 
-    <!-- MAIN NAVBAR -->
+    <!-- NAVBAR -->
     <header class="sticky top-0 z-40 bg-dark-950/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <!-- Brand Logo -->
             <a href="#inicio" class="flex flex-col items-center group">
                 <span class="font-cinzel font-bold text-lg sm:text-xl tracking-[0.25em] text-white group-hover:text-gold transition">
                     GUSTAVO MARTINS
@@ -153,7 +140,6 @@
                 </span>
             </a>
 
-            <!-- Desktop Menu Links -->
             <nav class="hidden md:flex items-center gap-8">
                 <a href="#inicio" class="text-xs font-cinzel tracking-widest font-semibold text-gold border-b-2 border-gold pb-1">INÍCIO</a>
                 <a href="#categorias" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">ESTILOS</a>
@@ -163,7 +149,6 @@
                 <a href="#processo" class="text-xs font-cinzel tracking-widest font-semibold text-gray-300 hover:text-gold transition pb-1">PROCESSO</a>
             </nav>
 
-            <!-- CTA Button -->
             <div class="hidden sm:flex items-center">
                 <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-sm border border-gold/70 text-gold hover:bg-gold hover:text-black font-cinzel text-xs tracking-widest font-bold transition duration-300 flex items-center gap-2 group">
                     <i class="fa-brands fa-whatsapp text-sm group-hover:scale-110 transition-transform"></i>
@@ -171,13 +156,11 @@
                 </button>
             </div>
 
-            <!-- Mobile Hamburger -->
             <button id="mobileMenuBtn" class="md:hidden text-gold p-2 focus:outline-none" aria-label="Abrir Menu">
                 <i class="fa-solid fa-bars-staggered text-xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Drawer -->
         <div id="mobileMenu" class="hidden md:hidden bg-dark-900 border-b border-gold/20 px-6 py-6 transition-all">
             <div class="flex flex-col gap-4 font-cinzel text-sm tracking-wider">
                 <a href="#inicio" class="text-gold py-2 border-b border-white/5" onclick="toggleMobileMenu()">INÍCIO</a>
@@ -197,7 +180,7 @@
     <!-- HERO SECTION -->
     <section id="inicio" class="relative min-h-[92vh] flex items-center justify-center bg-dark-950 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images\image.png" 
+            <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2000&auto=format&fit=crop" 
                  alt="Tatuador trabalhando em estúdio escuro" 
                  class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-125 scale-105 transform hover:scale-100 transition duration-1000">
             <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-transparent"></div>
@@ -245,7 +228,7 @@
         </a>
     </section>
 
-    <!-- SECTION: CATEGORIAS / ESTILOS (RENDERIZADO DINAMICAMENTE VIA CONFIG.JS) -->
+    <!-- SECTION: CATEGORIAS -->
     <section id="categorias" class="py-24 bg-dark-950 relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -261,10 +244,7 @@
                 </div>
             </div>
 
-            <!-- Categories Dynamic Grid -->
-            <div id="categoriasGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5">
-                <!-- Injetado dinamicamente via config.js -->
-            </div>
+            <div id="categoriasGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5"></div>
 
             <div class="mt-12 text-center">
                 <a href="#portfolio" class="inline-block px-8 py-3 bg-transparent border border-gold/50 hover:border-gold hover:bg-gold/10 text-gold font-cinzel text-xs font-bold tracking-[0.25em] transition duration-300">
@@ -274,7 +254,7 @@
         </div>
     </section>
 
-    <!-- SECTION: ALGUNS TRABALHOS (PORTFÓLIO - RENDERIZADO DINAMICAMENTE VIA CONFIG.JS) -->
+    <!-- SECTION: PORTFÓLIO -->
     <section id="portfolio" class="py-24 bg-dark-900 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -290,7 +270,6 @@
                 </p>
             </div>
 
-            <!-- Filter Buttons -->
             <div id="filterContainer" class="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mb-10 text-xs font-cinzel">
                 <button onclick="filterPortfolio('all')" class="filter-btn active px-4 py-2 bg-gold text-black font-bold tracking-wider rounded-sm transition">TODOS</button>
                 <button onclick="filterPortfolio('blackwork')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">BLACKWORK</button>
@@ -300,10 +279,7 @@
                 <button onclick="filterPortfolio('fechamento')" class="filter-btn px-4 py-2 bg-dark-800 text-gray-300 hover:text-gold border border-white/5 tracking-wider rounded-sm transition">FECHAMENTOS</button>
             </div>
 
-            <!-- Portfolio Dynamic Grid -->
-            <div id="portfolioGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-                <!-- Injetado dinamicamente via config.js -->
-            </div>
+            <div id="portfolioGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4"></div>
 
             <div class="mt-12 text-center">
                 <button onclick="openBookingModal('Gostaria de ver o portfólio completo e consultar disponibilidade!')" class="px-8 py-3 bg-transparent border border-gold/50 hover:border-gold hover:bg-gold/10 text-gold font-cinzel text-xs font-bold tracking-[0.25em] transition duration-300">
@@ -314,12 +290,11 @@
         </div>
     </section>
 
-    <!-- SECTION: FLASH / CATÁLOGO DISPONÍVEL (RENDERIZADO DINAMICAMENTE VIA CONFIG.JS) -->
+    <!-- SECTION: FLASH / CATÁLOGO DISPONÍVEL -->
     <section id="catalogo" class="py-24 bg-dark-950 relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 
-                <!-- Left Column (Copy) -->
                 <div class="lg:col-span-4">
                     <h2 class="font-cinzel text-3xl sm:text-4xl font-black text-white leading-tight uppercase tracking-wider">
                         ESCOLHA.<br>
@@ -336,18 +311,15 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Flash Cards Grid -->
                 <div class="lg:col-span-8">
-                    <div id="catalogoGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                        <!-- Injetado dinamicamente via config.js -->
-                    </div>
+                    <div id="catalogoGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- SECTION: DO DESENHO À PELE (PROCESSO) -->
+    <!-- SECTION: PROCESSO -->
     <section id="processo" class="py-24 bg-dark-900 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -365,7 +337,6 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
                 
-                <!-- Step 1 -->
                 <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
                     <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
                         <i class="fa-solid fa-book-open"></i>
@@ -379,7 +350,6 @@
                     </p>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
                     <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
                         <i class="fa-brands fa-whatsapp"></i>
@@ -393,7 +363,6 @@
                     </p>
                 </div>
 
-                <!-- Step 3 -->
                 <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
                     <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
                         <i class="fa-solid fa-pen-nib"></i>
@@ -407,7 +376,6 @@
                     </p>
                 </div>
 
-                <!-- Step 4 -->
                 <div class="flex flex-col items-center text-center group p-4 bg-dark-950/60 rounded-sm border border-white/5 hover:border-gold/40 transition">
                     <div class="w-16 h-16 rounded-full bg-dark-850 border border-gold/40 flex items-center justify-center text-gold text-2xl mb-4 group-hover:scale-110 group-hover:border-gold transition duration-300">
                         <i class="fa-regular fa-calendar-check"></i>
@@ -439,7 +407,7 @@
                 
                 <div class="lg:col-span-6 relative">
                     <div class="relative z-10 rounded-sm overflow-hidden border border-white/10 shadow-2xl">
-                        <img src="images/fechamentos/imagem_1.jpeg" 
+                        <img src="images/Fechamentos/WhatsApp Image 2026-09-02 at 23.42.57 (4).jpeg" 
                              alt="Gustavo Martins Tatuador" 
                              onerror="this.src='https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=1000&auto=format&fit=crop'"
                              class="w-full h-[480px] object-cover filter grayscale contrast-125">
@@ -486,21 +454,18 @@
         </div>
     </section>
 
-    <!-- SECTION: INSTAGRAM FEED (@martinsgustj2- RENDERIZADO VIA CONFIG.JS) -->
+    <!-- SECTION: INSTAGRAM FEED -->
     <section class="py-20 bg-dark-900 relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center mb-10">
                 <a id="instaHeaderLink" href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 font-cinzel text-base sm:text-lg font-bold text-gold tracking-widest hover:underline">
                     <i class="fa-brands fa-instagram text-lg"></i>
-                    <span id="instaHeaderUser">@martinsgustj2
+                    <span id="instaHeaderUser">@martinsgustj2</span>
                 </a>
             </div>
 
-            <!-- Instagram Grid -->
-            <div id="instagramGrid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
-                <!-- Injetado dinamicamente via config.js -->
-            </div>
+            <div id="instagramGrid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3"></div>
 
         </div>
     </section>
@@ -538,9 +503,8 @@
     <!-- FOOTER -->
     <footer class="py-12 bg-dark-950 text-gray-400 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/5 pb-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
                 
-                <!-- Logo -->
                 <div class="flex flex-col items-center md:items-start">
                     <span class="font-cinzel font-bold text-base tracking-[0.25em] text-white">
                         GUSTAVO MARTINS
@@ -550,7 +514,6 @@
                     </span>
                 </div>
 
-                <!-- Social Links with Icons -->
                 <div class="flex items-center gap-8 font-cinzel text-[11px] tracking-wider text-gray-300">
                     <a id="footerInstaLink" href="https://instagram.com" target="_blank" class="hover:text-gold transition flex items-center gap-2">
                         <i class="fa-brands fa-instagram text-gold"></i> INSTAGRAM
@@ -563,7 +526,6 @@
                     </button>
                 </div>
 
-                <!-- Copyright -->
                 <div class="text-center md:text-right text-[11px] text-gray-500 font-light">
                     © 2026 Gustavo Martins Tattoo.<br>
                     Todos os direitos reservados.
@@ -579,9 +541,9 @@
     </button>
 
 
-    <!-- ================= MODALS & INTERACTIVE POPUPS ================= -->
+    <!-- MODALS -->
 
-    <!-- 1. WHATSAPP BOOKING & ESTIMATE MODAL -->
+    <!-- 1. WHATSAPP BOOKING MODAL -->
     <div id="bookingModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4">
         <div class="bg-dark-900 border border-gold/40 rounded-sm max-w-lg w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto shadow-2xl">
             <button onclick="closeModal('bookingModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
@@ -674,7 +636,7 @@
         </div>
     </div>
 
-    <!-- 3. LIGHTBOX MODAL (FOR TATTOO PHOTOS) -->
+    <!-- 3. LIGHTBOX MODAL -->
     <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4">
         <button onclick="closeModal('lightboxModal')" class="absolute top-6 right-6 text-gold hover:text-white text-2xl z-20">
             <i class="fa-solid fa-xmark"></i>
@@ -691,7 +653,7 @@
         </div>
     </div>
 
-    <!-- 4. LOCATION / STUDIO MODAL -->
+    <!-- 4. LOCATION MODAL -->
     <div id="locationModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4">
         <div class="bg-dark-900 border border-gold/40 rounded-sm max-w-md w-full p-6 relative text-center">
             <button onclick="closeModal('locationModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
@@ -704,7 +666,7 @@
                 Ambiente climatizado, com música ambiente selecionada, café especial e rigorosos protocolos de biossegurança descartável e esterilização hospitalar.
             </p>
             <div id="locationBox" class="bg-dark-950 p-3 mt-4 border border-white/10 rounded text-xs text-gray-300">
-                📍 São Paulo - SP | Endereço completo enviado na confirmação do agendamento.
+                📍 Viamão - RS | Endereço completo enviado na confirmação do agendamento.
             </div>
             <button onclick="openBookingModal('Olá, gostaria de agendar uma visita/sessão no estúdio!')" class="w-full mt-5 py-3 bg-gold text-black font-cinzel font-bold text-xs tracking-widest rounded-sm">
                 AGENDAR SESSÃO NO ESTÚDIO
@@ -713,18 +675,22 @@
     </div>
 
 
-    <!-- IMPORTA O ARQUIVO DE CONFIGURAÇÕES DE DADOS E IMAGENS -->
+    <!-- CONFIGURAÇÃO EXTERNA (CONFIG.JS) -->
     <script src="config.js"></script>
 
-    <!-- JAVASCRIPT LOGIC & DYNAMIC RENDER -->
+    <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Fallback default image in case any local image is missing
         const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop";
+
+        function safeImgUrl(url) {
+            if (!url) return DEFAULT_FALLBACK_IMG;
+            if (url.startsWith('http://') || url.startsWith('https://')) return url;
+            return encodeURI(url);
+        }
 
         let currentFlashName = '';
         let currentFlashPrice = '';
 
-        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
 
@@ -737,10 +703,6 @@
         function toggleMobileMenu() {
             if (mobileMenu) mobileMenu.classList.add('hidden');
         }
-
-        /* ==========================================================================
-           RENDERIZAÇÃO DINÂMICA DAS SEÇÕES VIA CONFIG.JS
-           ========================================================================== */
 
         document.addEventListener('DOMContentLoaded', () => {
             initEstudioData();
@@ -764,7 +726,6 @@
             if (locationBox && ESTUDIO_CONFIG.enderecoResumido) locationBox.innerHTML = `📍 ${ESTUDIO_CONFIG.enderecoResumido}`;
         }
 
-        // 1. Renderiza Categorias
         function renderCategorias() {
             const container = document.getElementById('categoriasGrid');
             if (!container || typeof CATEGORIAS_SITE === 'undefined') return;
@@ -772,7 +733,7 @@
             container.innerHTML = CATEGORIAS_SITE.map(cat => `
                 <div onclick="filterPortfolio('${cat.id}')" class="group relative bg-dark-900 rounded-sm overflow-hidden border border-white/10 hover:border-gold/60 transition-all duration-500 cursor-pointer flex flex-col h-[380px]">
                     <div class="h-56 overflow-hidden relative">
-                        <img src="${cat.imagem}" 
+                        <img src="${safeImgUrl(cat.imagem)}" 
                              alt="${cat.nome}" 
                              onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
                              class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-110 transition duration-700">
@@ -801,7 +762,6 @@
             `).join('');
         }
 
-        // 2. Renderiza Portfólio
         function renderPortfolio() {
             const container = document.getElementById('portfolioGrid');
             if (!container || typeof PORTFOLIO_TRABALHOS === 'undefined') return;
@@ -809,8 +769,8 @@
             container.innerHTML = PORTFOLIO_TRABALHOS.map(item => `
                 <div class="portfolio-item group relative aspect-[3/4] bg-dark-950 overflow-hidden border border-white/10 rounded-sm cursor-pointer" 
                      data-category="${item.categoria}" 
-                     onclick="openLightbox('${item.imagem}', '${item.titulo}', '${item.categoriaLabel}')">
-                    <img src="${item.imagem}" 
+                     onclick="openLightbox('${safeImgUrl(item.imagem)}', '${item.titulo}', '${item.categoriaLabel}')">
+                    <img src="${safeImgUrl(item.imagem)}" 
                          alt="${item.titulo}" 
                          onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
                          class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-110 group-hover:brightness-90 transition duration-700">
@@ -823,7 +783,6 @@
             `).join('');
         }
 
-        // 3. Renderiza Catálogo Flash
         function renderCatalogoFlash() {
             const container = document.getElementById('catalogoGrid');
             if (!container || typeof CATALOGO_FLASH === 'undefined') return;
@@ -834,14 +793,14 @@
                 <div class="flash-card group cursor-pointer flex flex-col bg-dark-900 border border-white/10 hover:border-gold/60 transition duration-300 rounded-sm overflow-hidden" 
                      onclick="openFlashModal('${flash.titulo}', '${formattedPrice}', '${flash.descricao || ''}')">
                     <div class="flash-paper p-3 flex items-center justify-center aspect-[4/5] relative overflow-hidden">
-                        <img src="${flash.imagem}" 
+                        <img src="${safeImgUrl(flash.imagem)}" 
                              alt="${flash.titulo}" 
                              onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
                              class="w-full h-full object-cover filter contrast-125 group-hover:scale-105 transition duration-500 rounded-sm">
                         <span class="absolute top-2 right-2 text-[9px] font-cinzel text-black font-bold bg-white/70 backdrop-blur-sm px-2 py-0.5 rounded border border-black/20 shadow-sm">${flash.tag || ('#' + (index + 1).toString().padStart(2, '0'))}</span>
                     </div>
                     <div class="py-3 px-2 text-center bg-dark-900 border-t border-white/5">
-                        <p class="text-[11px] font-cinzel text-gray-300 truncate px-1">${flash.titulo}</p>
+                        <p class="text-[11px] font-cinzel text-gray-300 truncate px-1">${flash.titulo || 'Flash Disponível'}</p>
                         <span class="text-gold font-cinzel font-bold text-sm tracking-widest flex items-center justify-center gap-1.5 mt-0.5 group-hover:text-gold-hover">
                             <span class="text-[10px]">✦</span> R$ ${formattedPrice} <span class="text-[10px]">✦</span>
                         </span>
@@ -851,7 +810,6 @@
             }).join('');
         }
 
-        // 4. Renderiza Instagram Feed
         function renderInstagram() {
             const container = document.getElementById('instagramGrid');
             if (!container || typeof INSTAGRAM_POSTS === 'undefined') return;
@@ -860,8 +818,8 @@
 
             const postsHtml = INSTAGRAM_POSTS.slice(0, 6).map(post => `
                 <div class="aspect-square bg-dark-950 overflow-hidden border border-white/10 group cursor-pointer" 
-                     onclick="openLightbox('${post.imagem}', '${post.titulo}', 'Instagram')">
-                    <img src="${post.imagem}" 
+                     onclick="openLightbox('${safeImgUrl(post.imagem)}', '${post.titulo}', 'Instagram')">
+                    <img src="${safeImgUrl(post.imagem)}" 
                          alt="${post.titulo}" 
                          onerror="this.src='${DEFAULT_FALLBACK_IMG}'"
                          class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-110 transition duration-500">
@@ -880,7 +838,6 @@
             container.innerHTML = postsHtml + ctaHtml;
         }
 
-        // Filter Portfolio Items
         function filterPortfolio(category) {
             const items = document.querySelectorAll('.portfolio-item');
             const buttons = document.querySelectorAll('.filter-btn');
@@ -911,7 +868,6 @@
             });
         }
 
-        // Open Lightbox
         function openLightbox(imgSrc, title, category) {
             document.getElementById('lightboxImg').src = imgSrc;
             document.getElementById('lightboxTitle').textContent = title;
@@ -919,7 +875,6 @@
             openModal('lightboxModal');
         }
 
-        // Open Flash Modal
         function openFlashModal(title, price, desc = '') {
             currentFlashName = title;
             currentFlashPrice = price;
@@ -938,7 +893,6 @@
             window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`, '_blank');
         }
 
-        // Open WhatsApp Booking Modal
         function openBookingModal(customNote = '') {
             if (customNote) {
                 document.getElementById('projectNotes').value = customNote;
@@ -950,7 +904,6 @@
             openModal('locationModal');
         }
 
-        // Generic Modal Helpers
         function openModal(modalId) {
             const m = document.getElementById(modalId);
             if (m) {
@@ -967,7 +920,6 @@
             }
         }
 
-        // Close on background click
         window.addEventListener('click', (e) => {
             const modals = ['bookingModal', 'flashModal', 'lightboxModal', 'locationModal'];
             modals.forEach(id => {
@@ -978,7 +930,6 @@
             });
         });
 
-        // WhatsApp Form Submit Handler
         function handleBookingSubmit(e) {
             e.preventDefault();
             const name = document.getElementById('clientName').value;
