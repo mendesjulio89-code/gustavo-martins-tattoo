@@ -24,7 +24,6 @@ const CATALOGO_FLASH = [
         id: 1,
         tag: "#01",
         titulo: "Fine Line Mão",
-        preco: "150",
         imagem: "images/Flash/WhatsApp Image 2026-09-02 at 23.42.57.jpeg",
         descricao: "Arte autoral exclusiva pronta para tatuar na mão, pulso ou pescoço."
     },
@@ -32,7 +31,6 @@ const CATALOGO_FLASH = [
         id: 2,
         tag: "#02",
         titulo: "Flash Exotérica",
-        preco: "350",
         imagem: "images/Flash/WhatsApp Image 2026-09-02 at 23.42.56 (1).jpeg",
         descricao: "Composição ornamental detalhada em preto puro."
     },
@@ -40,7 +38,6 @@ const CATALOGO_FLASH = [
         id: 3,
         tag: "#03",
         titulo: "Flash com Free Hand",
-        preco: "350",
         imagem: "images/Flash/WhatsApp Image 2026-09-02 at 23.49.35.jpeg",
         descricao: "Botânica sombria com geometria fina e detalhes pontilhados."
     },
@@ -48,7 +45,6 @@ const CATALOGO_FLASH = [
         id: 4,
         tag: "#04",
         titulo: "Arcano Baphomet Dark",
-        preco: "400",
         imagem: "images/Flash/WhatsApp Image 2026-09-02 at 23.49.37.jpeg",
         descricao: "Arte mística com forte presença, contraste e sombreamento denso."
     },
@@ -56,7 +52,6 @@ const CATALOGO_FLASH = [
         id: 5,
         tag: "#05",
         titulo: "Blackwork Adaga",
-        preco: "380",
         imagem: "images/Flash/WhatsApp Image 2026-09-02 at 23.49.37 (5).jpeg",
         descricao: "Adaga clássica com sombras sólidas e alto contraste."
     }
