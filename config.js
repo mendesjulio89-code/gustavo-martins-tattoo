@@ -87,7 +87,7 @@ const CATEGORIAS_SITE = [
         id: "blackwork",
         nome: "BLACKWORK",
         descricao: "Contraste marcante, sombras densas e presença imponente na pele.",
-        imagem: "images/fechamentos/fechamentos2.jpeg",
+        imagem: "images/fechamentos/pescoco-1.jpeg",
         icone: "fa-solid fa-gem"
     },
     {
@@ -137,7 +137,7 @@ const PORTFOLIO_TRABALHOS = [
         titulo: "Adaga & Fechamento Blackwork",
         categoria: "blackwork",
         categoriaLabel: "BLACKWORK",
-        imagem: "images/fechamentos/fechamentos2.jpeg"
+        imagem: "images/fechamentos/pescoco-1.jpeg"
     },
     {
         titulo: "Pescoço Free Hand Sombreado",
