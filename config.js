@@ -87,7 +87,7 @@ const CATEGORIAS_SITE = [
         id: "blackwork",
         nome: "BLACKWORK",
         descricao: "Contraste marcante, sombras densas e presença imponente na pele.",
-        imagem: "images/fechamentos/fechamentos-2.jpeg",
+        imagem: "images/fechamentos/fechamentos2.jpeg",
         icone: "fa-solid fa-gem"
     },
     {
@@ -209,7 +209,7 @@ const INSTAGRAM_POSTS = [
     },
     {
         titulo: "Post Instagram: Fechamento Blackwork",
-        imagem: "images/fechamentos/fechamentos-2.jpeg"
+        imagem: "images/fechamentos/fechamentos2.jpeg"
     },
     {
         titulo: "Post Instagram: Figura Mística",
